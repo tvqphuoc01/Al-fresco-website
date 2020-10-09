@@ -1,0 +1,149 @@
+doctype html
+html.lang="en"
+    head
+        meta(charset="utf-8")
+        meta(name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no")
+        link(rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous")
+        link(rel="stylesheet" href="style.css")
+        link(href="https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap" rel="stylesheet")
+        link(href="./font/fontawesome/css/all.min.css" rel="stylesheet")
+    body
+        header 
+            nav.navbar.navbar-expand-lg.navbar-dark.fixed-top
+                div.nav-left.row
+                    div(class="toggler col-2" data-toggle="collapse" data-target="#sidebarContent" aria-controls="sidebarContent" aria-expanded="false" aria-label="Toggle navigation")
+                        .navTrigger
+                            i
+                            i
+                            i  
+                    div(class="sidebar collapse" id="sidebarContent")
+                        .sidebar-content
+                            .row.profile
+                                .col-4.profile-img
+                                    img(src="./img/avatar-default.png" alt="avatar" width="70px" heigh="70px")
+                                .col-8.profile-info.row.ml-2
+                                    div.row.user TÀI KHOẢN
+                                    div.row.user-info
+                                        a(href="#").col-6 Đăng nhập
+                                        a(href="#").col-6 Đăng ký
+                            .menu
+                                ul.list-group
+                                    li.active
+                                        a(href="#") TRANG CHỦ
+                                    li.active
+                                        a(href="#") KHUYẾN MÃI
+                                    li.active
+                                        a(href="#") ĐẶT HÀNG ONLINE
+                                    li.active
+                                        a(href="#") VỀ CHÚNG TÔI
+                                    li.active
+                                        a(href="#") ĐẶT TIỆC
+                                    li.active
+                                        a(href="#") LIÊN HỆ
+                            .social-link
+                                a(href="#")
+                                    i(class="fab fa-facebook fa-3x")
+                                a(href="#")
+                                    i(class="fab fa-youtube fa-3x")
+                                a(href="#")
+                                    i(class="fab fa-instagram fa-3x")
+                    div(class="tool-bar col-10")
+                        div(class="tool-bar-area row")
+                            div.lang
+                                a(href="#" class="opt-lang")
+                                    img(src="./img/i-english.jpg", alt="english")
+                                a(href="#" class="opt-lang")
+                                    img(src="./img/i-vietnam.jpg", alt="vietnam")
+                            div.select-custom
+                                select(name="venue" id="venue")
+                                    option(value="HCM") HỒ CHÍ MINH
+                                    option(value="HN") HÀ NỘI
+                                    option(value="DN") ĐÀ NẲNG
+                                    option(value="HP") HẢI PHÒNG
+                                    option(value="BD") BÌNH DƯƠNG
+                div(class="logo")
+                    a(href="#")
+                        img(src="./img/alf-logo.png", alt="logo")
+                div(class="nav-right")
+                    nav.navbar.navbar-expand-lg
+                        .navbar-support
+                            ul.navbar-nav
+                                li.nav-item.dropdown.membership
+                                    button(class="btn dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false") THÀNH VIÊN <br> REWARD PLUS
+                                    div(class="dropdown-menu" aria-labelledby="dropdownMenuButton")
+                                        a(class="dropdown-item" href="#") Về Rewards Plus
+                                        a(class="dropdown-item" href="#") Ưu đãi sinh nhật
+                                        a(class="dropdown-item" href="#") Hỗ trợ Rewards Plus
+                                li.nav-item.nav-login
+                                    a(class="nav-link" href="#") ĐĂNG NHẬP
+                                li.nav-item
+                                    span(class="nav-link") /
+                                li.nav-item.nav-register
+                                    a(class="nav-link" href="#") ĐĂNG KÝ
+        main
+            .container-fluid.slider
+                div(id="carouselExampleIndicators" class="carousel slide" data-ride="carousel")
+                    ol(class="carousel-indicators")
+                        li(data-target="#carouselExampleIndicators" data-slide-to="0" class="active")
+                        li(data-target="#carouselExampleIndicators" data-slide-to="1")
+                        li(data-target="#carouselExampleIndicators" data-slide-to="2")
+                    div(class="carousel-inner")
+                        div(class="carousel-item active")
+                            a(href="#")
+                                img(class="d-block w-100" src="./img/PC-alfrescos-crazy-deal.jpg" alt="First slide")
+                        div(class="carousel-item")
+                            a(href="#")
+                                img(class="d-block w-100" src="./img/PC-alfrescos-crazy-combo-399k.jpg" alt="Second slide")
+                        div(class="carousel-item")
+                            a(href="#")
+                                img(class="d-block w-100" src="./img/alfrescos-app-vn.jpg" alt="Third slide")
+                    a(class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev")
+                        span(class="carousel-control-prev-icon" aria-hidden="true")
+                        span(class="sr-only") Previous
+                    a(class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next")
+                        span(class="carousel-control-next-icon" aria-hidden="true")
+                        span(class="sr-only") Next
+            .row.banner
+                .col-4.banner-wrapper
+                    a
+                        img(src="./img/banner-1.jpg", alt="", width="100%")
+                        .banner-name
+                            h3 Khuyến Mãi
+                .col-4.banner-wrapper
+                     a
+                        img(src="./img/banner-2.jpg", alt="", width="100%")
+                        .banner-name
+                            h3 Đặt Hàng Online
+                .col-4.banner-wrapper
+                     a
+                        img(src="./img/banner-3.jpg", alt="", width="100%")
+                        .banner-name
+                            h3 Thực Đơn Nhà Hàng
+        footer
+            .footer-container
+                .row.footer-content
+                    .col-8
+                        .footer-link
+                            a(href="#") Chính sách bảo mật
+                            span |
+                            a(href="#") Điều khoảng sử dung
+                            span |
+                            a(href="#") Chính sách đặt hàng online
+                            span |
+                            a(href="#") AFG VN
+                            span |
+                            a(href="#") Câu hỏi thường gặp
+                            span |
+                            a(href="#") Việc làm
+                            span |
+                            a(href="#") Đặt tiệc
+                        .copy-right @ Công ty TNHH Đức Nhân | Địa chỉ: số 23L Hai Bà Trưng, Phường Tràng Tiền, Quận Hoàn Kiếm, Hà Nội, Việt Nam | Số ĐKKD 0100233368 do sở KHĐT cấp ngày 06/05/1996 | Điện thoại: 024 38241166 | Email: cs@afg.vn
+                    .col-4
+                        a(href="http://online.gov.vn/Home/WebDetails/55011")
+                            img(src="./img/bocongthuong.png", alt="logo", class="logo-bct")
+
+
+
+        script(src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous")
+        script(src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous")
+        script(src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous")

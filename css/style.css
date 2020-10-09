@@ -1,0 +1,390 @@
+body {
+    width: 100%;
+    height: 100%;
+    background-color: #eee;
+    font: 14px 'Roboto',"Helvetica Neue",sans-serif;
+    font-weight: 400;
+    padding: 0;
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    color: #414042;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+}
+
+.lang {
+    margin: 0px !important;
+}
+
+.navbar {
+    background-color: #171719;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 60px;
+}
+
+.nav-left {
+    width: 45%;
+    height: 100%;
+    vertical-align: middle;
+}
+
+.toggler {
+    width: 1em;
+    height: 1em;
+    font-size: 35px;
+}
+
+.navTrigger {
+    cursor: pointer;
+    width: 30px;
+    height: 25px;
+    margin: auto;
+    left: 0;
+    right: 0;
+    top: .25rem;
+    bottom: 0;
+}
+
+.navTrigger i {
+    background-color: #fff;
+    border-radius: 2px;
+    content: "";
+    display: block;
+    margin: 5px;
+    width: 100%;
+    height: 4px;
+}
+
+.sidebar {
+    position: absolute;
+    top: 82px;
+    left: 0px;
+    min-width: 330px;
+    height: 100vh;
+    background: url('/img/bg-sidebar.png');
+    background-size: cover;
+}
+
+.sidebar-content {
+    position: relative;
+    min-width: 330px;
+    height: 100vh;
+    font-size: 16px;
+    padding: 30px 50px 80px;
+}
+
+.profile-img {
+    padding: 0;
+}
+
+.profile-info {
+    display: block;
+    padding: 10px 0;
+}
+
+.user {
+    display: flex;
+    justify-content: center;
+}
+
+.user-info a{
+    text-decoration: none;
+    cursor: pointer;
+    color: #414042;
+    padding: 10px 0;
+    display: flex;
+    justify-content: center;
+    transition: all .3s;
+}
+
+.user-info a:hover {
+    color: #F15A22;
+}
+
+.menu {
+    margin-top: 6%;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+ul {
+    list-style-type: none;
+}
+
+.menu ul li {
+    margin-left: 10px;
+}
+
+.menu a {
+    position: relative;
+    text-decoration: none;
+    color: #414042;
+    transition: all .3s;
+    display: block;
+    line-height: 40px;
+}
+
+.menu a:hover {
+    color: #F15A22;
+}
+
+.menu a:hover::before {
+    content: "";
+    background-image: url('../img/pizza-sm.png');
+    position: absolute;
+    display: inline-block;
+    top: 5px;
+    left: 0px;
+    width: 30px;
+    height: 28px;
+}
+
+.social-link {
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.social-link i {
+    width: 50px;
+    height: 50px;
+    margin: 10px 10px;
+}
+
+.fa-facebook {
+    color: #0e8ff2;
+}
+
+.fa-youtube {
+    color: #ff0000;
+}
+
+.fa-instagram {
+    color: transparent;
+    background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
+    background: -webkit-radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
+    background-clip: text;
+    -webkit-background-clip: text;
+}
+
+.tool-bar {
+    position: relative;
+    display: table-cell;
+    vertical-align: middle;
+    padding-left: 27px;
+    width: 320px;
+}
+
+.tool-bar-area {
+    width: 100%;
+    -webkit-box-align: center;
+    align-items: center;
+}
+
+.select-custom {
+    display: inline; 
+    margin: 0px 10px;
+    align-items: center;
+}
+
+.lang {
+    margin: 0px 10px;
+}
+
+.opt-lang {
+    margin: 0px 5px;
+}
+
+#venue {
+    height: 40px;
+    width: 190px;
+    border: 2px solid #414042;
+    box-sizing: border-box;
+    border-radius: 6px;
+    line-height: 24px;
+    color: #cbcbcb;
+    background-color: #171719;
+}
+
+#venue option {
+    color: #171719;
+    background-color: #fff;
+}
+
+.logo {
+    width: 140px;
+    display: inline-block;
+    top: 1px;
+    padding: 0;
+    height: auto;
+}
+
+.logo img {
+    max-width: 100%;
+}
+
+.nav-right {
+    width: 45%;
+    height: 100%;
+    vertical-align: middle;
+}
+
+.nav-right .navbar {
+    float: right;
+}
+
+.membership button {
+    display: block;
+    line-height: 1;
+    margin-right: 20px;
+    font-style: normal;
+    font-size: 14px;
+    color: #f3d901;
+    background-color: #171719;
+    border: none;
+}
+
+.membership button:hover {
+    color: #f3d901;
+}
+
+.membership::before {
+    content: "";
+    background: url("../img/rwp-card.png");
+    position: absolute;
+    display: inline-block;
+    display: block;
+    width: 80px;
+    height: 35px;
+    left: -70px;
+}
+
+.membership a:hover {
+    background: #feeee8;
+    color: #f37040;
+}
+
+.membership .dropdown-menu {
+    position: absolute;
+    top: 58px;
+}
+
+.nav-login a {
+    padding-left: 35px !important;
+    position: relative;
+    color: #fff !important;
+}
+
+.nav-login a:hover {
+    color: #e15521 !important;
+}
+
+.nav-login a:before {
+    content: "";
+    background: url("../img/i-person.png") 0 0/30px 30px;
+    position: absolute;
+    left: 0;
+    width: 30px;
+    height: 30px;
+    top: 0px;
+}
+
+.nav-register a {
+    padding-right: 35px !important;
+    position: relative;
+    color: #fff !important;
+}
+
+.nav-register a:hover {
+    color: #e15521 !important;
+}
+
+.nav-register a:after {
+    content: "";
+    background: url("../img/i-cart.png") 0 0/30px 30px;
+    position: absolute;
+    right: 0;
+    width: 30px;
+    height: 30px;
+    top: 0px;
+}
+
+.navbar-support .nav-item span {
+    color: #fff !important;
+}
+
+main {
+    flex-direction: row;
+    margin-top: -8px;
+    padding-top: 65px;
+    margin: 0;
+}
+
+.slider {
+    padding: 0;
+}
+
+.banner {
+    margin: 0;
+}
+
+.banner-wrapper {
+    position: relative;
+    display: block;
+    cursor: pointer;
+    padding-left: 0px;
+    padding-right: 0px;
+}
+
+.banner-name {
+    position: absolute;
+    top: 20%;
+    left: 2%;
+    width: 100%;
+}
+
+.banner-name h3 {
+    text-transform: capitalize;
+    font-size: 40px;
+    font-style: normal;
+    color: #fff;
+    line-height: 100%;
+    -webkit-box-align: center;
+    align-items: center;
+    text-align: center;
+    text-shadow: 0 1px 4px rgba(0,0,0,.5);
+}
+
+.footer-container {
+    background: url("../img/bg-footer.png") 0 0/contain;
+}
+
+.footer-content {
+    max-width: 83%;
+    margin: 0 auto;
+    font-size: 14px;
+    color: #fff;
+    padding: 15px 0;
+}
+
+.footer-link {
+    padding-bottom: 5px;
+}
+
+.footer-link a {
+    text-decoration: none;
+    color: #fff;
+    padding: 6px 0px;
+    display: inline-block;
+}
+
+.footer-link span {
+    padding: 0 3px;
+}
+
+.logo-bct {
+    max-width: 140px;
+    float: right;
+}
