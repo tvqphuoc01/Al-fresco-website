@@ -5,6 +5,7 @@ const port = 3000;
 app.use('/img', express.static('img'));
 app.use(express.static('css'));
 app.use('/font', express.static('font'));
+app.use('/js', express.static('js'));
 app.use(express.json());
 app.use(express.urlencoded({extended: true}));
 

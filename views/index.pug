@@ -7,11 +7,13 @@ html.lang="en"
         link(rel="stylesheet" href="style.css")
         link(href="https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap" rel="stylesheet")
         link(href="./font/fontawesome/css/all.min.css" rel="stylesheet")
+        script(src="./js/alfresco-custom.js")
     body
         header 
             nav.navbar.navbar-expand-lg.navbar-dark.fixed-top
                 div.nav-left.row
-                    div(class="toggler col-2" data-toggle="collapse" data-target="#sidebarContent" aria-controls="sidebarContent" aria-expanded="false" aria-label="Toggle navigation")
+                    a(class="closeBtn" id="clsBtn" onclick="closeBtnCustomeFunction()")
+                    div(class="toggler col-2" onclick="closeBtnCustomeFunction()" data-toggle="collapse" data-target="#sidebarContent" aria-controls="sidebarContent" aria-expanded="false" aria-label="Toggle navigation")
                         .navTrigger
                             i
                             i
@@ -142,8 +144,6 @@ html.lang="en"
                     .col-4
                         a(href="http://online.gov.vn/Home/WebDetails/55011")
                             img(src="./img/bocongthuong.png", alt="logo", class="logo-bct")
-
-
 
         script(src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous")
         script(src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous")
